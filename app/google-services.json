@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "893325604856",
+    "firebase_url": "https://fftopup-smaxiso.firebaseio.com",
+    "project_id": "fftopup-smaxiso",
+    "storage_bucket": "fftopup-smaxiso.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:893325604856:android:f32ed79edd097dea1e480d",
+        "android_client_info": {
+          "package_name": "com.max.fftopup"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "893325604856-v2uvutvgqv954oc51ggk6np0r3gbbfmm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.max.fftopup",
+            "certificate_hash": "782d0240e3b3d53fa570450b5f827510a715ba5c"
+          }
+        },
+        {
+          "client_id": "893325604856-5trvooj8poobkd9kd232amaq4jn78cqp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBmuNc_284UrcwZUJMEUtmi65B9ddI4yfk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "893325604856-5trvooj8poobkd9kd232amaq4jn78cqp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
