@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
 
 import android.annotation.TargetApi;
+import android.app.ActionBar;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -26,6 +27,8 @@ public class LogActivity extends AppCompatActivity {
 
         //changing name of action bar
         getSupportActionBar().setTitle("FF TopUp - Log");
+//        ActionBar actionBar = getActionBar();
+//        actionBar.setDisplayHomeAsUpEnabled(true);
 
         //creating view varriables
         final TextView logs = (TextView)findViewById(R.id.logs);
@@ -69,12 +72,12 @@ public class LogActivity extends AppCompatActivity {
                         public void onClick(DialogInterface dialog, int which) {
                             //MainActivity.tempList.clear();
 
-                            SharedPreferences splog;
-                            splog = getSharedPreferences("mypref", Context.MODE_PRIVATE);
-                            SharedPreferences.Editor editor = splog.edit();
+                            MainActivity.sp = getSharedPreferences("mypref", Context.MODE_PRIVATE);
+                            SharedPreferences.Editor editor = MainActivity.sp.edit();
                             editor.clear();
-                            editor.apply();
+                            editor.commit();
                             MainActivity.count = 0;
+                            MainActivity.str="";
                             logs.setText("");
                             Toast.makeText(LogActivity.this, "Logs reset successfull", Toast.LENGTH_SHORT).show();
                         }
